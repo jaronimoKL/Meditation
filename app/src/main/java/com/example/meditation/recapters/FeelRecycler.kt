@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.meditation.R
 import com.example.meditation.feelings
+import com.example.meditation.ui.home.HomeFragment
 
 
 //class FeelRecycler(val context: Context, val list: ArrayList<feel>): RecyclerView.Adapter<FeelRecycler.MyVH>() {
