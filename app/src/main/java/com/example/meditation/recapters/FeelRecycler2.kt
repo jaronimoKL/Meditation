@@ -40,8 +40,8 @@ import com.example.meditation.state
 class FeelRecycler2 (val context: Context, val quotes: quotes) : RecyclerView.Adapter<FeelRecycler2.MyVH>() {
     class MyVH(val itemView:View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.img_feel2)
-        val title: TextView = itemView.findViewById(R.id.text_feel3)
-        val text_state: TextView = itemView.findViewById(R.id.text_feel2)
+        val title: TextView = itemView.findViewById(R.id.text_feel2)
+        val text_state: TextView = itemView.findViewById(R.id.text_feel3)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FeelRecycler2.MyVH {
@@ -49,7 +49,7 @@ class FeelRecycler2 (val context: Context, val quotes: quotes) : RecyclerView.Ad
         return MyVH(root)
     }
 
-    override fun onBindViewHolder(holder: MyVH, position: Int) {
+    override fun onBindViewHolder(holder: FeelRecycler2.MyVH, position: Int) {
         Glide.with(context).load(quotes.data[position].image).into(holder.imageView)
         holder.title.setText(quotes.data[position].title)
         holder.text_state.setText(quotes.data[position].description)

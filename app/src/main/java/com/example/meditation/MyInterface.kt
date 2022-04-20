@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface MyInterface {
     @GET("/user/login")
-    fun getAuth(@Body hashMap: HashMap<String,String>):retrofit2.Call<login>
+    fun getAuth(@Body hashMap: HashMap<String,String>)
 
     @GET("feelings")
     fun getFeel():retrofit2.Call<feelings>
