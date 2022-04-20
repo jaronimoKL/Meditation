@@ -38,7 +38,7 @@ import com.example.meditation.state
 //
 //}
 class FeelRecycler2 (val context: Context, val quotes: quotes) : RecyclerView.Adapter<FeelRecycler2.MyVH>() {
-    class MyVH(val itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class MyVH(val itemView:View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.img_feel2)
         val title: TextView = itemView.findViewById(R.id.text_feel3)
         val text_state: TextView = itemView.findViewById(R.id.text_feel2)
